@@ -1,0 +1,35 @@
+{
+  "name": "jordan-quagliatini.net",
+  "version": "0.0.1",
+  "description": "Mon site personnel",
+  "main": "index.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1M0reBug/jordan-quagliatini.net.git"
+  },
+  "keywords": [
+    "site",
+    "personal",
+    "programming"
+  ],
+  "author": "@MoreBug",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1M0reBug/jordan-quagliatini.net/issues"
+  },
+  "homepage": "https://github.com/1M0reBug/jordan-quagliatini.net#readme",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-sanitize": "^1.4.4",
+    "angular-translate": "^2.7.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-csslint": "^0.1.5",
+    "gulp-jshint": "^1.11.2",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

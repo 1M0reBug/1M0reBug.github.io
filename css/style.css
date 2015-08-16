@@ -21,8 +21,6 @@ body::before {
 	}
 }
 
-
-
 .hand{
 	font-family: "Reenie Beanie", cursive;
 	font-size: 1.3em;
@@ -38,6 +36,10 @@ body::before {
 	color: white;
 }
 
+.profile {
+	width: 20%;
+}
+
 @media only screen and (min-width: 994px) {
   .top-back {
     background: #042029 url(../asset/bg-1-HD.png) repeat right top;
@@ -45,7 +47,7 @@ body::before {
 }
 
 .introduction {
-	background-color: #72818B;
+	background-color: #cdd2d4;
 	color: white;
 }
 
@@ -107,7 +109,7 @@ canvas {
 	top: 0;
 	left: 18px;
 	height: 100%;
-	widh: 4px;
+	width: 4px;
 	background: #d7e4ed;
 }
 
@@ -117,7 +119,7 @@ canvas {
     margin-bottom: 3em;
   }
   #timeline::before {
-    left: 50%;
+    left: 48%;
     margin-left: -2px;
   }
 }
