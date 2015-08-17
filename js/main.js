@@ -96,7 +96,7 @@ app.config(function($translateProvider) {
       pdfResume: "<a href='asset/cv.pdf' target='_blank'>Scaricare</a> il mio CV, in francese, al formatto PDF",
       connectFooter: "Connessione",
       agility: "Agilità",
-      javaContent: "Ho cominciato Java durante il mio diploma Universitario. Considerato IL LINGUAGGIO oggi. No è il linguaggio con cui ho più esperienze, però mi piaccerebbe usarlo.",
+      javaContent: "Ho cominciato Java durante il mio diploma Universitario. Considerato IL LINGUAGGIO oggi. Non è il linguaggio con cui ho più esperienze, però mi piaccerebbe usarlo.",
       "c++Content": "Ho anche imparato c++ durante il mio Diploma Universitario.",
       javascriptContent: "Il linguaggio che preferisco. Si possono fare così tante cose con javascript, che mi sembra essere davvero molto interessante.",
       expressContent: "Non ho mai usato Nodejs da solo, sempre con Express, su piccoli progetti (personali o di scuola) con MongoDB o Redis.",
