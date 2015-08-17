@@ -4,11 +4,13 @@
   Twitter: @MoreBug.
   Location: Lyon, France.
 
-/* SITE */
-
-  Last update: 2015/08/16
-  Language: French / English / Italian
-  Components: Angular, Angular-translate, jQuery, leaflet
+/* THANKS */
   Timeline: from codyhouse http://codyhouse.co/gem/vertical-timeline/
   Map Tiles: CartoDB https://cartodb.com/
   Map data: OpenstreeMap http://openstreetmap.org
+
+/* SITE */
+
+  Last update: 2015/08/17
+  Language: French / English / Italian
+  Components: Angular, Angular-translate, jQuery, leaflet

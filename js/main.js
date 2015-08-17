@@ -39,7 +39,7 @@ app.config(function($translateProvider) {
 
   $translateProvider.translations('fr', {
       TITLE: 'Jordan Quagliatini - Jeune développeur passioné par toute sorte de nouvelle technologie',
-      hello: "Salut, je m'appelle <span class='hand'>Jordan</span>",
+      hello: "Salut, je suis <span class='hand'>Jordan</span>",
       "sub-hello": 'Jeune développeur passioné par toute sorte de nouvelles technologies',
       introductionTitle: "Je me présente",
       introduction: "Futur ingénieur logiciel, alternant à CPE Lyon et développeur chez Orange France.",
