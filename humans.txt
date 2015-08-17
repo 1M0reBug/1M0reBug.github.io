@@ -5,6 +5,8 @@
   Location: Lyon, France.
 
 /* THANKS */
+
+  Italian correction : Landry Fotso
   Timeline: from codyhouse http://codyhouse.co/gem/vertical-timeline/
   Map Tiles: CartoDB https://cartodb.com/
   Map data: OpenstreeMap http://openstreetmap.org
