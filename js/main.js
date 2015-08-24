@@ -38,7 +38,7 @@ app.config(function($translateProvider) {
   });
 
   $translateProvider.translations('fr', {
-      TITLE: 'Jordan Quagliatini - Jeune développeur passionné par toute sorte de nouvelle technologie',
+      TITLE: 'Jordan Quagliatini - Jeune développeur passionné par toutes sortes de nouvelles technologies',
       hello: "Salut, je suis <span class='hand'>Jordan</span>",
       "sub-hello": 'Jeune développeur passionné par toute sorte de nouvelles technologies',
       introductionTitle: "Je me présente",
@@ -63,12 +63,12 @@ app.config(function($translateProvider) {
       agility: "Agilité",
       javaContent: "J'ai commencé le Java pendant mon DUT. C'est LE language à connaitre aujourd'hui. Je n'ai pas beaucoup d'expérience avec, mais je serais très intéressé de travailler avec.",
       "c++Content": "J'ai également appris le C++ durant mon DUT et je continue encore aujourd'hui.",
-      javascriptContent: "Mon langage préféré. Sympas à utiliser, beaucoup de librairies à découvrir, on peut l'utiliser côté serveur/client. C'est un langage dont l'utilisation est vraiment intéressante.",
+      javascriptContent: "Mon langage préféré. Sympa à utiliser, beaucoup de librairies à découvrir, on peut l'utiliser côté serveur/client. C'est un langage dont l'utilisation est vraiment intéressante.",
       expressContent: "Je n'ai jamais utilisé Nodejs seul, toujours avec Express, sur de petits projets (scolaires ou personnels) avec MongoDB ou Redis.",
       perlContent: "J'ai travaillé avec ce langage pendant un an en tant que langage de script ou orienté objet.",
       shellContent: "Je l'utilise tout le temps sur système UNIX pour toutes sortes de manipulations. C'est ce qui donne à Linux tout son charme.",
       gitContent: "J'ai découvert Git pendant mon stage de DUT, ce qui a été comme une révélation pour moi. Selon moi on ne peut être un développeur sans connaitre cet outil.",
-      agilityContent: "Je suis un de ces développeur jeune et inexpérimenté, qui pense encore que l'agilité est un mode de vie. Peut-être parce que je n'ai jamais vécu de vrai projet Agile, ce que j'espère combler bientôt.",
+      agilityContent: "Je suis un de ces développeurs jeunes et inexpérimentés, qui pensent encore que l'agilité est un mode de vie. Peut-être parce que je n'ai jamais vécu de vrai projet Agile, ce que j'espère combler bientôt.",
       readMoreSkills: "Plus"
   });
 
