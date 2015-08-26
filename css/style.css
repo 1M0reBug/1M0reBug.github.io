@@ -28,6 +28,7 @@ body::before {
 
 .full-page {
 	height: 100vh;
+  min-height:400px;
 	width: 100%;
 }
 
@@ -88,10 +89,11 @@ span.nav i {
 
 .introduction .valign {
 	text-shadow: 1px 1px 5px #111;
+  z-index: 2;
 }
 
 .introduction .valign h1, .introduction .valign p {
-  z-index: 1;
+  z-index: 2;
 }
 
 .introduction .valign p{

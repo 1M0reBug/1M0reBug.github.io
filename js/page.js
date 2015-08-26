@@ -248,8 +248,6 @@ var initMap = function() {
 		var mq = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 
 		var mapElement = $('#introduction');
-		/* pb gestion évènement de redimensionnement */
-		// http://leafletjs.com/ + https://www.mapbox.com/
 		if(mq === "desktop" && mapElement.data('map') === undefined) 	{
 			var map = L.map('introduction', {scrollWheelZoom : false})
 						.setView([45.784112807850256,4.8635101318359375],16)
@@ -280,7 +278,8 @@ var initMap = function() {
 			*/
 			L.tileLayer(cartoDBLight.url, {
 				attribution: cartoDBLight.attribution,
-				maxZoom: 17
+				maxZoom: 17,
+				zIndex: 0
 			}).addTo(map);
 
 
