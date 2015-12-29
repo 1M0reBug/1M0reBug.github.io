@@ -261,7 +261,7 @@ var initMap = function() {
 
 
 			var cartoDBLight = {
-				url : "http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+				url : "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
 				attribution : 'Map tiles by <a href="https://cartodb.com/">CartoDB</a>, under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://opendatacommons.org/licenses/odbl/">ODbL</a>.'
 			};
 			/** Alternatives tiles URLs
