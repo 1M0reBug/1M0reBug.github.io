@@ -1,12 +1,12 @@
 {
-  "name": "jordan-quagliatini.net",
-  "version": "0.0.1",
+  "name": "jordan-quagliatini.com",
+  "version": "1.0.0",
   "description": "Mon site personnel",
   "main": "index.html",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/1M0reBug/jordan-quagliatini.net.git"
+    "url": "https://github.com/1M0reBug/1M0reBug/github.io.git"
   },
   "keywords": [
     "site",
@@ -16,9 +16,9 @@
   "author": "@MoreBug",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1M0reBug/jordan-quagliatini.net/issues"
+    "url": "https://github.com/1M0reBug/1M0reBug.github.io/issues"
   },
-  "homepage": "https://github.com/1M0reBug/jordan-quagliatini.net#readme",
+  "homepage": "https://github.com/1M0reBug/1M0reBug.github.io#readme",
   "dependencies": {
     "angular": "^1.4.4",
     "angular-sanitize": "^1.4.4",

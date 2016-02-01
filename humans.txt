@@ -1,12 +1,13 @@
 /* TEAM */
 
-  Developper, Graphist: Jordan Quagliatini.
+  Development: Jordan Quagliatini.
   Twitter: @MoreBug.
   Location: Lyon, France.
 
 /* THANKS */
 
-  Italian correction : Landry Fotso
+  Italian grammar: Landry Fotso
+  French grammar: Lisa Pasqualini(aka Grammar nazi)
   Timeline: from codyhouse http://codyhouse.co/gem/vertical-timeline/
   Map Tiles: CartoDB https://cartodb.com/
   Map data: OpenstreeMap http://openstreetmap.org
@@ -15,4 +16,4 @@
 
   Last update: 2015/08/17
   Language: French / English / Italian
-  Components: Angular, Angular-translate, jQuery, leaflet
+  Components: Materialize.css, Angular, Angular-translate, jQuery, leaflet

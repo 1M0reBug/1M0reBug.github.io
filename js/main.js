@@ -11,10 +11,10 @@ app.config(function($translateProvider) {
       skillTitle: "Skills",
       educationTitle: "Education",
       bachelorCPETitle: "Bachelor - CPE Lyon",
-      bachelorCPE: "Integrating the Bachelor degreee, in order to begin my master class of computer engineering",
+      bachelorCPE: "Entering in Bachelor degreee, in order to begin my master class of computer engineering",
       timelineMoreInfosBtn: "More Infos",
       bachelorCPEDate: "September 15 - ?",
-      bachelorLPTitle: ">Bachelor degree in computer science - Lyon 1 University",
+      bachelorLPTitle: "Bachelor degree in computer science - Lyon 1 University",
       bachelorLP: "Studying information system and growing new skills : J2EE, .NET, NODEJS, Agility, ...",
       bachelorLPDate: "September 2015",
       degreeTitle: "Technology degree - University Institute of Technology Arles",
@@ -110,9 +110,19 @@ app.config(function($translateProvider) {
   $translateProvider.preferredLanguage('fr');
 });
 
-app.controller('Ctrl', function($scope, $translate, $rootScope) {
+app.controller('Ctrl', function($scope, $translate, $rootScope, $location) {
   $scope.changeLanguage = function(key) {
     $translate.use(key);
     $rootScope.title = $translate('TITLE');
+    $location.path(key);
   };
+  var path = $location.path().replace('/', '');
+  var lang = $translate.use();
+  if(path.length !== 0) {
+      if(path != lang && ['fr', 'en', 'it'].indexOf(path) !== -1) {
+          $scope.changeLanguage(path);
+      }
+  } else {
+      $location.path(lang);
+  }
 });

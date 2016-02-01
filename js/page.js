@@ -1,3 +1,7 @@
+//TODO: maybe use lodash instead of jquery
+//FIXME: removing the large array of skills
+//TODO: Using webpack instead of minifying everything
+
 $(document).ready(function() {
 
 	initMap();
