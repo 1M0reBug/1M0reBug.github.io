@@ -21,6 +21,10 @@ body::before {
 	}
 }
 
+.card .card-image img {
+    min-height: 100%;
+}
+
 .hand{
 	font-family: "Reenie Beanie", cursive;
 	font-size: 1.3em;
