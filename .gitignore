@@ -1,2 +1,5 @@
-css/materialize.css
+css
+js
 node_modules
+gulpfile
+index.jade
