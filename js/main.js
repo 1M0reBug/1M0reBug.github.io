@@ -4,7 +4,7 @@ app.config(function($translateProvider) {
   $translateProvider.useSanitizeValueStrategy('sanitize');
   $translateProvider.translations('en', {
       TITLE: 'Jordan Quagliatini - Young developer interested in every kind of new technology',
-      hello: "Hello, my name is <span class='hand'>Jordan</span>",
+      hello: "Hi, I'm <span class='hand'>Jordan</span>",
       "sub-hello": 'Young developer interested in every kind of new technology',
       introductionTitle: "Let me introduce me",
       introduction: "I'm a future software engineer, partially studying at CPE Lyon (Fr). In the same time I work for Orange France, the operator.",
@@ -78,8 +78,8 @@ app.config(function($translateProvider) {
       "sub-hello" : 'Giovane programmatore, appassionato di tutti i tipi di nuove tecnologie',
       introductionTitle: "Mi presento",
       introduction: "Futuro ingegnere, attualmente apprendista, studio a CPE Lyon e lavoro per Orange France",
-      skillTitle: "competenze",
-      educationTitle: "formazione",
+      skillTitle: "Competenze",
+      educationTitle: "Formazione",
       bachelorCPETitle: "Primo anno del diploma d'ingegnere",
       bachelorCPE: "Inizio il mio percorso d'ingegnere",
       timelineMoreInfosBtn: "saperne di più",
