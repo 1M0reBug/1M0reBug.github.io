@@ -1,5 +1,5 @@
 //TODO: Using webpack instead of minifying everything
-
+(function() {
 $(document).ready(function() {
 
 	initMap();
@@ -56,3 +56,4 @@ var initMap = function() {
 			mapElement.data('map', 'true');
 		}
 };
+})();

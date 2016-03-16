@@ -1,3 +1,4 @@
+(function() {
 var app = angular.module('jordanModule', ['pascalprecht.translate', 'ngSanitize']);
 
 app.config(function($translateProvider) {
@@ -126,3 +127,4 @@ app.controller('Ctrl', function($scope, $translate, $rootScope, $location) {
       $location.path(lang);
   }
 });
+})();
