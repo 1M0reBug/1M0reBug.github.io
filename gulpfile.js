@@ -11,6 +11,7 @@ var gulp      = require('gulp'),
 
 
 gulp.task('default', ['generateJson', 'csslint', 'minify-css', 'lint', 'minify-js', 'templates']);
+gulp.task('basic', ['lint', 'minify-js', 'templates']);
 
 gulp.task('generateJson', function() {
     var skills = [

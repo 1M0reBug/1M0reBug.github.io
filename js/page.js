@@ -1,6 +1,18 @@
-//TODO: Using webpack instead of minifying everything
 (function() {
 $(document).ready(function() {
+
+	// $('#internship-modal').leanModal({
+	// 	dismissible: true,
+	// 	opacity: 0.5,
+	// });
+
+	var scrollFileOptions = [
+		{selector: '#skills', offset: 50, callback: function(el) {
+			$('#internship-modal').openModal();
+		}}
+	];
+
+	Materialize.scrollFire(scrollFileOptions);
 
 	initMap();
 
@@ -9,21 +21,35 @@ $(document).ready(function() {
 	});
 });
 
+var mq = function() {
+	return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/\"/g, "").replace(/'/g, ""); //"
+};
+
 var initMap = function() {
 
 
 		var mq = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/\"/g, "").replace(/'/g, ""); //"
 
 		var mapElement = $('#introduction');
-		if(mq === "desktop" && mapElement.data('map') === undefined) 	{
+		if(mapElement.data('map') === undefined) 	{
+
+			var coordinates = [45.784112807850256,4.8635101318359375];
+			var mobileCoordinates = [45.783420,4.867889];
+
+			var currentCoordinates = (mq === 'desktop') ? coordinates : mobileCoordinates;
+			var lastMq = mq;
 			var map = L.map('introduction', {scrollWheelZoom : false})
-						.setView([45.784112807850256,4.8635101318359375],16)
+						.setView(currentCoordinates,16)
 						.on('resize', function(event) {
 							var mq = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, ""); // "
-							if(mq === 'mobile') {
-								map.remove();
-								$('#introduction').removeData('map');
+							if(mq === 'mobile' && lastMq === 'desktop') {
+								map.setView(mobileCoordinates, 16);
+								console.log("Resize fired for mobile !");
+							} else if (mq === 'desktop' && lastMq === 'mobile') {
+								map.setView(coordinates, 16);
+								console.log("Resize fired for DESKTOP !");
 							}
+							lastMq = mq;
 						});
 
 
