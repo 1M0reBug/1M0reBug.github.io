@@ -34,7 +34,7 @@ var initMap = function() {
 		if(mapElement.data('map') === undefined) 	{
 
 			var coordinates = [45.784112807850256,4.8635101318359375];
-			var mobileCoordinates = [45.783420,4.867889];
+			var mobileCoordinates = [45.781675, 4.869206];
 
 			var currentCoordinates = (mq === 'desktop') ? coordinates : mobileCoordinates;
 			var lastMq = mq;
@@ -44,10 +44,8 @@ var initMap = function() {
 							var mq = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, ""); // "
 							if(mq === 'mobile' && lastMq === 'desktop') {
 								map.setView(mobileCoordinates, 16);
-								console.log("Resize fired for mobile !");
 							} else if (mq === 'desktop' && lastMq === 'mobile') {
 								map.setView(coordinates, 16);
-								console.log("Resize fired for DESKTOP !");
 							}
 							lastMq = mq;
 						});

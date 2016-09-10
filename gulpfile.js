@@ -1,17 +1,15 @@
 var gulp      = require('gulp'),
-    csslint   = require('gulp-csslint'),
     minifyCss = require('gulp-minify-css'),
-    jshint    = require('gulp-jshint'),
     jsmin     = require('gulp-jsmin'),
     rename    = require('gulp-rename'),
     data      = require('gulp-data'),
     Geopattern = require('geopattern'),
     fs         = require('fs'),
-    jade       = require('gulp-jade');
+    pug       = require('gulp-pug');
 
 
-gulp.task('default', ['generateJson', 'csslint', 'minify-css', 'lint', 'minify-js', 'templates']);
-gulp.task('basic', ['lint', 'minify-js', 'templates']);
+gulp.task('default', ['generateJson', 'minify-css', 'minify-js', 'templates']);
+gulp.task('basic', ['minify-js', 'templates']);
 
 gulp.task('generateJson', function() {
     var skills = [
@@ -34,23 +32,11 @@ gulp.task('generateJson', function() {
     console.log("\u2713 json file in place !");
 });
 
-gulp.task('csslint', function(){
-  gulp.src("css/style.css")
-      .pipe(csslint())
-      .pipe(csslint.reporter());
-});
-
 gulp.task('minify-css', function() {
   return gulp.src('css/style.css')
     .pipe(minifyCss())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('public'));
-});
-
-gulp.task('lint', function() {
-  return gulp.src('./js/+(main|page).js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
 });
 
 gulp.task('minify-js', function () {
@@ -61,10 +47,10 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('templates', function() {
-    return gulp.src('./index.jade')
+    return gulp.src('./index.pug')
         .pipe(data(function(file) {
             return require('./js/skills.json');
         }))
-        .pipe(jade())
+        .pipe(pug())
         .pipe(gulp.dest('.'));
 });

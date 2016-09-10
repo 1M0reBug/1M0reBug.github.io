@@ -108,7 +108,7 @@ app.config(function($translateProvider) {
       readMoreSkills: "saperne di più"
   });
 
-  $translateProvider.preferredLanguage('fr');
+  $translateProvider.preferredLanguage('en');
 });
 
 app.controller('Ctrl', function($scope, $translate, $rootScope, $location) {
