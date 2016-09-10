@@ -1,0 +1,12 @@
+{
+    "extends": "standard",
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "$": true
+    },
+    "rules": {
+        "no-tabs": "off"
+    }
+}
