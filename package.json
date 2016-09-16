@@ -1,12 +1,12 @@
 {
   "name": "jordan-quagliatini.com",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "Mon site personnel",
   "main": "index.html",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/1M0reBug/1M0reBug/github.io.git"
+    "url": "https://github.com/1M0reBug/1M0reBug.github.io.git"
   },
   "keywords": [
     "site",
@@ -23,16 +23,5 @@
     "angular": "^1.4.4",
     "angular-sanitize": "^1.4.4",
     "angular-translate": "^2.7.2"
-  },
-  "devDependencies": {
-    "geopattern": "^1.2.3",
-    "gulp": "^3.9.0",
-    "gulp-csslint": "^0.1.5",
-    "gulp-data": "^1.2.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-jsmin": "^0.1.5",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-rename": "^1.2.2"
   }
 }
