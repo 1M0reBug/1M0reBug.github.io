@@ -1,6 +1,6 @@
 var gulp      = require('gulp'),
     minifyCss = require('gulp-minify-css'),
-    jsmin     = require('gulp-jsmin'),
+    uglify    = require('gulp-uglifyjs'),
     rename    = require('gulp-rename'),
     data      = require('gulp-data'),
     Geopattern = require('geopattern'),
@@ -41,7 +41,7 @@ gulp.task('minify-css', function() {
 
 gulp.task('minify-js', function () {
     gulp.src('./js/+(main|page).js')
-        .pipe(jsmin())
+        .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('public'));
 });
