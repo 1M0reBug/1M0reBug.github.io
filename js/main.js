@@ -1,4 +1,5 @@
-(function() {
+(function () {
+/* eslint-disable */
 var app = angular.module('jordanModule', ['pascalprecht.translate', 'ngSanitize']);
 
 app.config(function($translateProvider) {
@@ -110,21 +111,22 @@ app.config(function($translateProvider) {
 
   $translateProvider.preferredLanguage('en');
 });
+/* eslint-enable */
 
-app.controller('Ctrl', function($scope, $translate, $rootScope, $location) {
-  $scope.changeLanguage = function(key) {
-    $translate.use(key);
-    $rootScope.title = $translate('TITLE');
-    $location.path(key);
-  };
-  var path = $location.path().replace('/', '');
-  var lang = $translate.use();
-  if(path.length !== 0) {
-      if(path != lang && ['fr', 'en', 'it'].indexOf(path) !== -1) {
-          $scope.changeLanguage(path);
+  app.controller('Ctrl', function ($scope, $translate, $rootScope, $location) {
+    $scope.changeLanguage = function (key) {
+      $translate.use(key);
+      $rootScope.title = $translate('TITLE');
+      $location.path(key);
+    };
+    var path = $location.path().replace('/', '');
+    var lang = $translate.use();
+    if (path.length !== 0) {
+      if (path !== lang && ['fr', 'en', 'it'].indexOf(path) !== -1) {
+        $scope.changeLanguage(path);
       }
-  } else {
+    } else {
       $location.path(lang);
-  }
-});
+    }
+  });
 })();
