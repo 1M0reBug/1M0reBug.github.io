@@ -6,23 +6,21 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/1M0reBug/1M0reBug/github.io.git"
+    "url": "https://github.com/1M0reBug/1M0reBug.github.io.git"
   },
   "keywords": [
     "site",
     "personal",
     "programming"
   ],
-  "author": "@MoreBug",
+  "author": "@morebug",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/1M0reBug/1M0reBug.github.io/issues"
   },
   "homepage": "https://github.com/1M0reBug/1M0reBug.github.io#readme",
   "dependencies": {
-    "angular": "^1.4.4",
-    "angular-sanitize": "^1.4.4",
-    "angular-translate": "^2.7.2"
+    "gnal.js": "0.0.4"
   },
   "devDependencies": {
     "eslint": "^3.5.0",
