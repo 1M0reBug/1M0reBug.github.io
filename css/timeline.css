@@ -1,0 +1,104 @@
+.timeline-section {
+    margin-top: 4em;
+    position: relative;
+}
+
+.timeline-section:first-child {
+    margin-top: 1.5em;
+}
+
+/* TIMELINE DRAWING */
+.timeline-bubble {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: .3em;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 10px;
+    bottom: -70px;/* FIXME There must be something to do with calc! */
+    width: 1px;
+    margin-left: 4.5px;
+}
+
+.timeline-badges {
+    margin-bottom: .9em;
+}
+
+.timeline-badges ul {
+    list-style: none;
+    margin: .2em 0 0 1.8em;
+    padding: 0;
+    display: inline-block;
+}
+
+.timeline-badges li {
+    float: left;
+    line-height: 20px;
+    border: 1px solid;
+    margin: 0 .4em .4em 0;
+    font-size: .8em;
+    text-align: center;
+    padding: .1em .5em;
+}
+
+.timeline-badges li:before {
+    content: '#'
+}
+
+/* THEMED TIMELINE */
+body.dark .timeline-bubble {
+    background-color: white;
+}
+
+body.dark .timeline-line {
+    background-color: white;
+}
+
+body.clear .timeline-bubble {
+    background-color: #46464b;
+}
+
+body.clear .timeline-line {
+    background-color: #46464b;
+}
+
+body.clear.contrast .timeline-bubble {
+    background-color: black;
+}
+
+body.clear.contrast .timeline-line {
+    background-color: black;
+}
+
+body.dark .timeline-badges li {
+    border-color: white;
+}
+
+body.clear .timeline-badges li {
+    border-color: #46464b;
+}
+
+body.clear.contrast .timeline-badges li {
+    border-color: black;
+}
+
+/* TIMELINE SPACING */
+.timeline-content {
+    padding-left: 2em;
+}
+
+.timeline-body p:first-child {
+    margin: 0;
+}
+
+.timeline-date {
+    margin-left: 1.8em;
+    font-size: .8em;
+    margin-top: .3em;
+    padding: .2em;
+    line-height: 20px;
+}

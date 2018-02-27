@@ -1,50 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jordan Quagliatini | Site Under Construction</title>
-    <style>
-        body {
-            font-family: monospace;
-            width: 430px;
-            margin: 0 auto;
-            margin-top: 35vh;}
-        h1, h2 { text-align: center; }
-        h1 { margin-bottom: 0; }
-        h2 { margin-top: 0;
-            font-size: 1.73em; } 
-        p { text-align: justify; } 
-        a { color: rgb(32, 156, 238); }
+    <title>Jordan Quagliatini | French Full Stack Developer</title>
 
-        @media screen and (max-width: 450px) {
-            body {
-                width: 90vw;
-                padding: 0 5vw; }
-            h1 { font-size: 1.2rem; }
-            h2 { font-size: 1.1rem; }
-        }
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/favicon180.png">
+    <link rel="icon" href="img/favicons/favicon48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="img/favicons/favicon16.png" type="image/png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="img/favicons/favicon.svg" color="#212125">
+    <meta name="theme-color" content="#212125">
 
-        @media screen and (max-width: 345px) {
-            h1 { font-size: 1rem; }
-            h2 { font-size: .9rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
 </head>
-<body>
-    <h1>
-        Hi I'm Jordan Quagliatini
-    </h1>
-    <h2>
-        trainee full-stack developer
-    </h2>
-    <p>
-        Sadly, this site is under construction,
-        but do not hesitate to come back later!
-        In the meantime you can check my
-        <a href="https://github.com/jquagliatini">github</a> or
-        <a href="https://linkedin.com/in/jordan-quagliatini">linkedin</a> account.
-    </p>
+
+<body class="dark">
+    <main>
+        <noscript>
+            Multiple things are handled by javascript, if you decided to disable it, I understand your choice. If you would like to change
+            the theme you can open the developer console and change the body class to "clear", "clear contrast" or "dark".
+        </noscript>
+
+        <span class="flex-container column center">
+            <sup>themes</sup>
+            <ul class="theme-selection">
+                <li class="clear" title="Change theme to clear">#</li>
+                <li class="clear contrast" title="Change theme to a more contrasted clear theme">#</li>
+                <li class="dark" title="Change theme to dark">#</li>
+            </ul>
+        </span>
+        <span class="flex-container">
+            <span>
+                <h1>Hi I'm Jordan</h1>
+                <h2>French Full Stack Developer</h2>
+            </span>
+            <span>
+                <img src="https://github.com/jquagliatini.png" alt="Jordan's profile picture" class="profile" />
+            </span>
+        </span>
+
+        <article id="content">
+            <section id="education">
+                <h3>
+                    <a href="#education" aria-hidden="true" class="anchor"></a>
+                    Education
+                </h3>
+
+                <div class="timeline">
+                    <div class="timeline-section">
+                        <div class="timeline-bubble"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <div>CPE Lyon</div>
+                            <div>> Master Degree Software Development</div>
+                            <div class="timeline-row">
+                                <div class="timeline-date">
+                                    <time datetime="2015-09-04">Sep. 2015</time> -
+                                    <time datetime="2018-09-04">Sep. 2018</time>
+                                </div>
+                                <div class="timeline-badges">
+                                    <ul>
+                                        <li>Network</li>
+                                        <li>Communication</li>
+                                        <li>Programming</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    Appart from the technical skills I aquired during these 3 years of integrated work and study program, I will keep the communication
+                                    skills.
+                                </p>
+                                <p>
+                                    I had the opportunity to learn new things around networks and was introduced with Big Data as well as other topics.
+                                </p>
+                                <p>
+                                    <a href="https://goo.gl/DSZbqt">learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="timeline-bubble"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <div>Lyon 1 University</div>
+                            <div>> Vocational Degree Software Development</div>
+                            <div class="timeline-row">
+                                <div class="timeline-date">
+                                    <time datetime="2014-09-01">Sep. 2014</time> -
+                                    <time datetime="2015-09-01">Sep. 2015</time>
+                                </div>
+                                <div class="timeline-badges">
+                                    <ul>
+                                        <li>JEE</li>
+                                        <li>AngularJS</li>
+                                        <li>.NET</li>
+                                        <li>CQRS/DDD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    A really practical degree, focused on Information Systems. I learnt a lot about databases like Oracle, and general development
+                                    around JEE and C#. I was introduced to new concepts like three-tier architecture, SPAs
+                                    and CQRS.
+                                </p>
+                                <p>
+                                    <a href="https://goo.gl/43m563">learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="timeline-bubble"></div>
+                        <div class="timeline-content">
+                            <div>IUT Aix-Marseille (Arles)</div>
+                            <div>> University Technical Degree</div>
+                            <div class="timeline-row">
+                                <div class="timeline-date">
+                                    <time datetime="2012-09-01">Sep. 2012</time> -
+                                    <time datetime="2014-06-30">June 2014</time>
+                                </div>
+                                <div class="timeline-badges">
+                                    <ul>
+                                        <li>C++</li>
+                                        <li>Java</li>
+                                        <li>Imagery</li>
+                                        <li>Algorithmics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    During these two years I learnt the basics of programming. From algorithmics to digital imaging. I was introduced to multiple
+                                    languages like x86 Asm, C++, Java and PHP.
+                                </p>
+                                <p>
+                                    <a href="https://goo.gl/xzkCnj">learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="working-experience">
+                <h3>
+                    <a href="#working-experience" aria-hidden="true" class="anchor"></a>
+                    Working Experience
+                </h3>
+
+                <div class="timeline">
+                    <div class="timeline-section">
+                        <div class="timeline-bubble"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <div>Orange France <em>(Lyon - France)</em></div>
+                            <div>> Devops Advocate / Change Management</div>
+                            <div class="timeline-row">
+                                <div class="timeline-date">
+                                    <time datetime="2017-09-01">Sep. 2017</time> -
+                                    <time datetime="2018-09-04">Sep. 2018</time>
+                                </div>
+                                <div class="timeline-badges">
+                                    <ul>
+                                        <li>git</li>
+                                        <li>Jenkins</li>
+                                        <li>Legacy</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-body"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="timeline-bubble"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <div>Ellyot <em>(London - UK)</em></div>
+                            <div>> Full Stack Developer</div>
+                            <div class="timeline-row">
+                                <div class="timeline-date">
+                                    <time datetime="2017-06-19">June 2017</time> -
+                                    <time datetime="2018-08-25">Aug. 2017</time>
+                                </div>
+                                <div class="timeline-badges">
+                                    <ul>
+                                        <li>NodeJS</li>
+                                        <li>Redis</li>
+                                        <li>PHP</li>
+                                        <li>React Native</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-body"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="timeline-bubble"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <div>Orange France <em>(Lyon - France)</em></div>
+                            <div>> Full Stack Developer</div>
+                            <div class="timeline-row">
+                                <div class="timeline-date">
+                                    <time datetime="2015-09-07">Sep. 2015</time> -
+                                    <time datetime="2017-06-17">June 2017</time>
+                                </div>
+                                <div class="timeline-badges">
+                                    <ul>
+                                        <li>Ionic</li>
+                                        <li>PostGIS</li>
+                                        <li>NodeJS</li>
+                                        <li>Perl</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-body"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                            <div class="timeline-bubble"></div>
+                            <div class="timeline-content">
+                                <div>Vaisonet <em>(Vaison-la-Romaine - France)</em></div>
+                                <div>> Web Developer</div>
+                                <div class="timeline-row">
+                                    <div class="timeline-date">
+                                        <time datetime="2014-04-01">Apr. 2014</time> -
+                                        <time datetime="2014-07-01">July 2014</time>
+                                    </div>
+                                    <div class="timeline-badges">
+                                        <ul>
+                                            <li>JS</li>
+                                            <li>PHPUnit</li>
+                                            <li>PrestaShop</li>
+                                        </ul>
+                                    </div>
+                                    <div class="timeline-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h3>
+                    <a href="#skills" aria-hidden="true" class="anchor"></a>
+                    Skills
+                </h3>
+
+                <div class="timeline-badges">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Docker</li>
+                        <li>NodeJS</li>
+                        <li>git/gitlab/github</li>
+                        <li>Tests</li>
+                        <li>CI/CD</li>
+                        <li>Postgres</li>
+                        <li>MongoDB</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="job">
+                <h3>
+                    <a href="#job" aria-hidden="true" class="anchor"></a>
+                    Available for hiring
+                    <small>
+                        (<time datetime="2018-09-05">05/09/18</time>)
+                    </small>
+                </h3>
+
+                <p>Starting from September 2018, I will start my professional life</p>
+                <p>
+                    If by any chance you are looking for a passionate developer curious
+                    about everything, fund of automation, tests and best practices, do
+                    not hesitate to contact me via one of the link listed below.
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer id="links">
+        <p>Links:
+            <a href="https://github.com/jquagliatini">github</a>,
+            <a href="https://linkedin.com/in/jordan-quagliatini">linkedin</a>,
+            <a href="https://stackoverflow.com/users/story/7493763">stack overflow</a>,
+            <a href="https://twitter.com/jquagliatini">twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        (function () {
+            document.querySelectorAll('.theme-selection li').forEach((li) => {
+                li.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const classList = document.body.classList;
+                    while (classList.length > 0) {
+                        classList.remove(classList.item(0));
+                    }
+                    e.target.classList.forEach((className) => {
+                        document.body.classList.add(className);
+                    });
+                });
+            });
+        })()
+
+    </script>
 </body>
+
 </html>
