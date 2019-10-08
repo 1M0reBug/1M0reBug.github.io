@@ -73,7 +73,8 @@ main h2 {
     font-size: 1.1em;
 }
 
-main h3 a.anchor {
+main h3 a.anchor,
+body.clear.contrast h3 a.anchor {
     margin-left: -1em;
     background-color: initial;
 }
