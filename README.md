@@ -2,22 +2,9 @@
 
 My personal website/online CV.
 
-## TODO
+## DISCLAIMER
 
-- [x] global redesign
-- [ ] content redaction (**WIP**)
-- [ ] translation
-- [ ] static site generation (translated static files with webpack and [gnal.js][url:gnal])
-- [ ] site optimization ([see here][url:fast-site])
-
-[url:gnal]: https://github.com/jquagliatini/gnal.js
-[url:fast-site]: https://goo.gl/hCWXkR
-
-## Goals
-
-Simplicity!
-
-That's all I wanted for my website redesign. Nothing really fancy but enought to be attracting.
+This project moved to https://gitlab.com/jquagliatini/jquagliatini.gitlab.io
 
 ## License
 
